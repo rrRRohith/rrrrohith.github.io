@@ -1,1 +1,78 @@
-Hello world
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Site Yapım Aşamasında</title>
+  <style>body {
+  background: #000;
+}
+
+#YakındaYazı {
+  color: green;
+  /*color: #8002f5;*/
+  font-family: Monaco, monospace;
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  animation: 120ms infinite normal yaziyiSallandir;
+}
+
+span {
+  animation: 1.5s infinite normal imleç;
+}
+
+::-moz-selection {
+  background: #7021d2;
+  color: #fff;
+}
+
+::selection {
+  background: #7021d2;
+  color: #fff;
+}
+
+@keyframes yaziyiSallandir {
+  0% {
+    opacity: 0;
+    left: 0;
+  }
+  40%,
+  80% {
+    opacity: 1;
+    left: -2px;
+  }
+}
+
+@keyframes imleç {
+  0% {
+    opacity: 0;
+    left: 0;
+  }
+  40% {
+    opacity: 0;
+    left: -2px;
+  }
+  80% {
+    opacity: 1;
+    left: -2px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+  <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+    <div id="YakındaYazı">█ █ █ <span style="color:black">█ █ █ █ █ █ █ █ █ █ </span>31%
+      <br>&gt; 
+      Hello, Im Rohith
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;<br>&gt; 
+      Hayad biddi  <span id="imleç">█</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+  </body>
+
+</html>
